@@ -30,7 +30,6 @@ namespace Recording_System_3._5
 
         private void PasswordForm_Load(object sender, EventArgs e)
         {
-
         }
     }
 }
