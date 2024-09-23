@@ -39,6 +39,8 @@ namespace Recording_System_3._5
             {
                 MessageBox.Show("An error has occurred when reading a message");
             }
+
+            fs.Close();
         }
 
         private void btnMarkAsRead_Click(object sender, EventArgs e)
