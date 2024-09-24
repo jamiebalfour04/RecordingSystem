@@ -10,15 +10,12 @@ namespace Recording_System_3._5
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
 
         private void button1_Click(object sender, EventArgs e)
         {
             if (usernameInput.Text == Properties.Resources.username && passwordInput.Text == Properties.Resources.password)
             {
+                Program.LOGGED_IN = true;
                 new SelectMessage().Visible = true;
                 this.Visible = false;
             }
@@ -30,6 +27,11 @@ namespace Recording_System_3._5
 
         private void PasswordForm_Load(object sender, EventArgs e)
         {
+        }
+
+        private void PasswordForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Environment.Exit(0);
         }
     }
 }

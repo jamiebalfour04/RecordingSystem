@@ -29,8 +29,7 @@ namespace Recording_System_3._5
         private void btnClose_Click(object sender, EventArgs e)
         {
             new StartupSelector().Visible = true;
-            this.Visible = false;
-            this.Dispose();
+            this.Close();
         }
 
         private string pad(string txt)
@@ -43,7 +42,13 @@ namespace Recording_System_3._5
         }
 
         private void btnSave_Click(object sender, EventArgs e)
+                   
         {
+            if(teacherName.Text == "" || pupilName.Text == "" || richTextBox3.Text == "")
+            {
+                MessageBox.Show("Please ensure that you have filled in all data before trying to submit.", "Submit", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
             Aes aes = Aes.Create();
 
 
@@ -86,6 +91,8 @@ namespace Recording_System_3._5
         private void newToolStripButton_Click(object sender, EventArgs e)
         {
             richTextBox3.Clear();
+            teacherName.Clear();
+            pupilName.Clear();
         }
 
         private void boldToolStripButton_Click(object sender, EventArgs e)
@@ -103,5 +110,19 @@ namespace Recording_System_3._5
             richTextBox3.SelectionFont = new Font(richTextBox3.Font.FontFamily, richTextBox3.Font.Size, FontStyle.Underline);
         }
 
+        private void undoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            richTextBox3.Undo();
+        }
+
+        private void redoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            richTextBox3.Redo();
+        }
+
+        private void RecordSomething_FormClosing(object sender, FormClosedEventArgs e)
+        {
+            new StartupSelector().Visible = true;
+        }
     }
 }

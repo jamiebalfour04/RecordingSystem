@@ -70,7 +70,7 @@ namespace Recording_System_3._5.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to C:\Users\jamie\output.
+        ///   Looks up a localized string similar to S:\Staff Work\Responsibility of All\Staff Reporting System\Program Output\.
         /// </summary>
         internal static string mainPath {
             get {
@@ -79,7 +79,7 @@ namespace Recording_System_3._5.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to mouse.
+        ///   Looks up a localized string similar to kajbgf2024.
         /// </summary>
         internal static string password {
             get {
@@ -106,7 +106,7 @@ namespace Recording_System_3._5.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to mickey.
+        ///   Looks up a localized string similar to kastaff.
         /// </summary>
         internal static string username {
             get {

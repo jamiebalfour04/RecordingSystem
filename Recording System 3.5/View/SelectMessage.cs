@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Drawing;
 using System.IO;
 using System.Windows.Forms;
 using System.Xml.Serialization;
@@ -12,7 +13,6 @@ namespace Recording_System_3._5
             InitializeComponent();
         }
 
-        public static ViewMessage currentMessage = null;
         private int currentLength = 0;
 
 
@@ -36,7 +36,7 @@ namespace Recording_System_3._5
         {
             var s = new XmlSerializer(typeof(SerialisableFile));
 
-
+            listView1.Items.Clear();
 
             string[] fileEntries = Directory.GetFiles(Program.PROGRAM_PATH);
             currentLength = fileEntries.Length;
@@ -53,7 +53,12 @@ namespace Recording_System_3._5
                     l.Tag = Path.GetFileName(fileName);
                     l.SubItems.Add(AESEncryption.Decrypt(messageObject.pupilName, Program.CIPHER).TrimEnd());
                     l.SubItems.Add(AESEncryption.Decrypt(messageObject.teacherName, Program.CIPHER).TrimEnd());
+                    if(messageObject.read == true)
+                    {
+                        l.ForeColor = Color.FromArgb(0, 200, 0);
+                    }
                     listView1.Items.Add(l);
+                    fs.Close();
                 }
                 catch (Exception ex)
                 {
@@ -68,17 +73,15 @@ namespace Recording_System_3._5
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (currentMessage != null)
+            if (listView1.SelectedIndices.Count < 1)
             {
-
-                currentMessage.loadFile((string)listView1.Items[listView1.SelectedIndices[0]].Tag);
-                currentMessage.Visible = true;
+                MessageBox.Show("Please select at least one item to view");
+                return;
             }
-            else
-            {
-                currentMessage = new ViewMessage((string)listView1.Items[listView1.SelectedIndices[0]].Tag);
-                currentMessage.Visible = true;
-            }
+            
+            new ViewMessage((string)listView1.Items[listView1.SelectedIndices[0]].Tag).Visible = true;
+                
+            
         }
 
         private void SelectMessage_Close(object sender, FormClosingEventArgs e)

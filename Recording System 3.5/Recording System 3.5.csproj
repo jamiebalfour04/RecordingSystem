@@ -49,41 +49,47 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AESEncryption.cs" />
-    <Compile Include="PasswordForm.cs">
+    <Compile Include="Model\AESEncryption.cs" />
+    <Compile Include="View\SplashScreen.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PasswordForm.Designer.cs">
+    <Compile Include="View\SplashScreen.Designer.cs">
+      <DependentUpon>SplashScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\PasswordForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\PasswordForm.Designer.cs">
       <DependentUpon>PasswordForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Program.cs" />
+    <Compile Include="Controller\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RecordSomething.cs">
+    <Compile Include="View\RecordSomething.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="RecordSomething.Designer.cs">
+    <Compile Include="View\RecordSomething.Designer.cs">
       <DependentUpon>RecordSomething.cs</DependentUpon>
     </Compile>
-    <Compile Include="SelectMessage.cs">
+    <Compile Include="View\SelectMessage.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SelectMessage.Designer.cs">
+    <Compile Include="View\SelectMessage.Designer.cs">
       <DependentUpon>SelectMessage.cs</DependentUpon>
     </Compile>
-    <Compile Include="SerialisableFile.cs" />
-    <Compile Include="StartupSelector.cs">
+    <Compile Include="Model\SerialisableFile.cs" />
+    <Compile Include="View\StartupSelector.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="StartupSelector.Designer.cs">
+    <Compile Include="View\StartupSelector.Designer.cs">
       <DependentUpon>StartupSelector.cs</DependentUpon>
     </Compile>
-    <Compile Include="ViewMessage.cs">
+    <Compile Include="View\ViewMessage.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ViewMessage.Designer.cs">
+    <Compile Include="View\ViewMessage.Designer.cs">
       <DependentUpon>ViewMessage.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="PasswordForm.resx">
+    <EmbeddedResource Include="View\PasswordForm.resx">
       <DependentUpon>PasswordForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -96,16 +102,19 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="RecordSomething.resx">
+    <EmbeddedResource Include="View\RecordSomething.resx">
       <DependentUpon>RecordSomething.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SelectMessage.resx">
+    <EmbeddedResource Include="View\SelectMessage.resx">
       <DependentUpon>SelectMessage.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="StartupSelector.resx">
+    <EmbeddedResource Include="View\SplashScreen.resx">
+      <DependentUpon>SplashScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\StartupSelector.resx">
       <DependentUpon>StartupSelector.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ViewMessage.resx">
+    <EmbeddedResource Include="View\ViewMessage.resx">
       <DependentUpon>ViewMessage.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">

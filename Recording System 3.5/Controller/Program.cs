@@ -19,7 +19,7 @@ namespace Recording_System_3._5
 
         public static readonly string CIPHER = "knox2024";
         //public static readonly string PROGRAM_PATH = @"S:\Staff Work\Responsibility of All\Staff Reporting System\Program Output\";
-        public static readonly string PROGRAM_PATH = @"C:\Users\jamie\Subjects\";
-
+        public static readonly string PROGRAM_PATH = Properties.Resources.mainPath;
+        public static bool LOGGED_IN = false;
     }
 }

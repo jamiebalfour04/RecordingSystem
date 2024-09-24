@@ -53,8 +53,8 @@ namespace Recording_System_3._5
                 mySerializer.Serialize(myWriter, messageObject);
                 myWriter.Close();
 
-                this.Visible = false;
-                this.Dispose();
+                this.Close();
+
 
             }
 
@@ -62,9 +62,7 @@ namespace Recording_System_3._5
 
         private void btnClose_Click(object sender, EventArgs e)
         {
-            SelectMessage.currentMessage = null;
-            this.Visible = false;
-            this.Dispose();
+            this.Close();
         }
 
         private void ViewMessage_Load(object sender, EventArgs e)

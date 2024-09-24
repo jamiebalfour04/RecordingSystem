@@ -40,14 +40,18 @@ namespace Recording_System_3._5
             this.recordedOn = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.teacher = new System.Windows.Forms.TextBox();
-            this.informationBox = new System.Windows.Forms.RichTextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnMarkAsRead = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.informationBox = new System.Windows.Forms.RichTextBox();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
+            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -62,14 +66,17 @@ namespace Recording_System_3._5
             // 
             // tableLayoutPanel1
             // 
+            this.tableLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel1.BackColor = System.Drawing.SystemColors.Control;
             this.tableLayoutPanel1.ColumnCount = 1;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel3, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.informationBox, 0, 2);
             this.tableLayoutPanel1.Controls.Add(this.panel1, 0, 3);
-            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.panel2, 0, 2);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(12, 12);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 4;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 36F));
@@ -77,7 +84,7 @@ namespace Recording_System_3._5
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 70F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 22F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(914, 480);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(916, 510);
             this.tableLayoutPanel1.TabIndex = 1;
             // 
             // tableLayoutPanel3
@@ -92,14 +99,14 @@ namespace Recording_System_3._5
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 1;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(908, 30);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(910, 30);
             this.tableLayoutPanel3.TabIndex = 1;
             // 
             // subjectLabel
             // 
             this.subjectLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.subjectLabel.AutoSize = true;
-            this.subjectLabel.Location = new System.Drawing.Point(27, 7);
+            this.subjectLabel.Location = new System.Drawing.Point(28, 7);
             this.subjectLabel.Name = "subjectLabel";
             this.subjectLabel.Size = new System.Drawing.Size(79, 16);
             this.subjectLabel.TabIndex = 0;
@@ -111,10 +118,10 @@ namespace Recording_System_3._5
             this.pupilName.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.pupilName.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pupilName.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.pupilName.Location = new System.Drawing.Point(137, 3);
+            this.pupilName.Location = new System.Drawing.Point(138, 3);
             this.pupilName.Name = "pupilName";
             this.pupilName.ReadOnly = true;
-            this.pupilName.Size = new System.Drawing.Size(768, 27);
+            this.pupilName.Size = new System.Drawing.Size(769, 27);
             this.pupilName.TabIndex = 1;
             // 
             // tableLayoutPanel2
@@ -123,7 +130,7 @@ namespace Recording_System_3._5
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 27.15596F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 72.84404F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 40F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 377F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 378F));
             this.tableLayoutPanel2.Controls.Add(this.label1, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.recordedOn, 1, 0);
             this.tableLayoutPanel2.Controls.Add(this.label3, 2, 0);
@@ -133,7 +140,7 @@ namespace Recording_System_3._5
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(908, 30);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(910, 30);
             this.tableLayoutPanel2.TabIndex = 0;
             // 
             // recordedOn
@@ -145,14 +152,14 @@ namespace Recording_System_3._5
             this.recordedOn.Location = new System.Drawing.Point(136, 3);
             this.recordedOn.Name = "recordedOn";
             this.recordedOn.ReadOnly = true;
-            this.recordedOn.Size = new System.Drawing.Size(351, 27);
+            this.recordedOn.Size = new System.Drawing.Size(352, 27);
             this.recordedOn.TabIndex = 1;
             // 
             // label3
             // 
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(499, 7);
+            this.label3.Location = new System.Drawing.Point(500, 7);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(22, 16);
             this.label3.TabIndex = 2;
@@ -164,31 +171,18 @@ namespace Recording_System_3._5
             this.teacher.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.teacher.Dock = System.Windows.Forms.DockStyle.Fill;
             this.teacher.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.teacher.Location = new System.Drawing.Point(533, 3);
+            this.teacher.Location = new System.Drawing.Point(534, 3);
             this.teacher.Name = "teacher";
             this.teacher.ReadOnly = true;
-            this.teacher.Size = new System.Drawing.Size(372, 27);
+            this.teacher.Size = new System.Drawing.Size(373, 27);
             this.teacher.TabIndex = 3;
-            // 
-            // informationBox
-            // 
-            this.informationBox.BackColor = System.Drawing.Color.White;
-            this.informationBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.informationBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.informationBox.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.informationBox.Location = new System.Drawing.Point(3, 75);
-            this.informationBox.Name = "informationBox";
-            this.informationBox.ReadOnly = true;
-            this.informationBox.Size = new System.Drawing.Size(908, 332);
-            this.informationBox.TabIndex = 2;
-            this.informationBox.Text = "";
             // 
             // panel1
             // 
             this.panel1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.panel1.Controls.Add(this.btnMarkAsRead);
             this.panel1.Controls.Add(this.btnClose);
-            this.panel1.Location = new System.Drawing.Point(272, 413);
+            this.panel1.Location = new System.Drawing.Point(273, 443);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(369, 63);
             this.panel1.TabIndex = 3;
@@ -196,9 +190,9 @@ namespace Recording_System_3._5
             // btnMarkAsRead
             // 
             this.btnMarkAsRead.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnMarkAsRead.Location = new System.Drawing.Point(83, 18);
+            this.btnMarkAsRead.Location = new System.Drawing.Point(69, 18);
             this.btnMarkAsRead.Name = "btnMarkAsRead";
-            this.btnMarkAsRead.Size = new System.Drawing.Size(106, 25);
+            this.btnMarkAsRead.Size = new System.Drawing.Size(120, 25);
             this.btnMarkAsRead.TabIndex = 5;
             this.btnMarkAsRead.Text = "Mark as Read";
             this.btnMarkAsRead.UseVisualStyleBackColor = true;
@@ -209,20 +203,55 @@ namespace Recording_System_3._5
             this.btnClose.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnClose.Location = new System.Drawing.Point(197, 18);
             this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(106, 25);
+            this.btnClose.Size = new System.Drawing.Size(120, 25);
             this.btnClose.TabIndex = 4;
             this.btnClose.Text = "Close";
             this.btnClose.UseVisualStyleBackColor = true;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.informationBox);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel2.Location = new System.Drawing.Point(3, 75);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(910, 362);
+            this.panel2.TabIndex = 4;
+            // 
+            // informationBox
+            // 
+            this.informationBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.informationBox.BackColor = System.Drawing.Color.White;
+            this.informationBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.informationBox.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.informationBox.Location = new System.Drawing.Point(9, 12);
+            this.informationBox.Name = "informationBox";
+            this.informationBox.ReadOnly = true;
+            this.informationBox.Size = new System.Drawing.Size(892, 335);
+            this.informationBox.TabIndex = 3;
+            this.informationBox.Text = "";
+            // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.tableLayoutPanel1);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel3.Location = new System.Drawing.Point(0, 0);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(940, 534);
+            this.panel3.TabIndex = 2;
             // 
             // ViewMessage
             // 
             this.AcceptButton = this.btnMarkAsRead;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(914, 480);
-            this.Controls.Add(this.tableLayoutPanel1);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(66)))));
+            this.ClientSize = new System.Drawing.Size(940, 534);
+            this.Controls.Add(this.panel3);
             this.Name = "ViewMessage";
+            this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Staff Recording System :: View Message";
             this.Load += new System.EventHandler(this.ViewMessage_Load);
@@ -232,6 +261,8 @@ namespace Recording_System_3._5
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();
             this.panel1.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -246,10 +277,12 @@ namespace Recording_System_3._5
         private TableLayoutPanel tableLayoutPanel2;
         private TextBox recordedOn;
         private Label label3;
-        private RichTextBox informationBox;
         private TextBox teacher;
         private Panel panel1;
         private Button btnMarkAsRead;
         private Button btnClose;
+        private Panel panel2;
+        private RichTextBox informationBox;
+        private Panel panel3;
     }
 }
