@@ -12,16 +12,22 @@ namespace Recording_System_3._5
 {
     public partial class StartupSelector : Form
     {
+        static bool splashShown = false;
         public StartupSelector()
         {
             InitializeComponent();
-            this.Visible = false;
-            Thread t = new Thread(new ThreadStart(OpenSplashScreen));
-            t.Start();
-            Thread.Sleep(1000);
+            if (!splashShown)
+            {
+                splashShown = true;
+                this.Visible = false;
+                Thread t = new Thread(new ThreadStart(OpenSplashScreen));
+                t.Start();
+                Thread.Sleep(1400);
+
+                t.Abort();
+                this.Visible = true;
+            }
             
-            t.Abort();
-            this.Visible = true;
             this.BringToFront();
             this.Focus();
            

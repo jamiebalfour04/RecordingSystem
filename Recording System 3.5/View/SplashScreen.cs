@@ -30,7 +30,7 @@ namespace Recording_System_3._5
 
         private void timer2_Tick(object sender, EventArgs e)
         {
-            label3.Width = label3.Width + 8;
+            label3.Width = label3.Width + 7;
         }
     }
 }
