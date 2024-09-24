@@ -110,7 +110,7 @@ namespace Recording_System_3._5
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(532, 22);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Staff Recording System © J Balfour and G Fraser";
+            this.label1.Text = "© Jamie Balfour and Gail Fraser";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // StartupSelector
