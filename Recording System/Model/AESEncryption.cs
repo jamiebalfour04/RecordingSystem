@@ -5,7 +5,7 @@ using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
 
-namespace Recording_System_3._5
+namespace Recording_System
 {
     internal class AESEncryption
     {

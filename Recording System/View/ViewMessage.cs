@@ -3,7 +3,7 @@ using System.IO;
 using System.Windows.Forms;
 using System.Xml.Serialization;
 
-namespace Recording_System_3._5
+namespace Recording_System
 {
     public partial class ViewMessage : Form
     {

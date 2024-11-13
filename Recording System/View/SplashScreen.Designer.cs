@@ -1,4 +1,4 @@
-﻿namespace Recording_System_3._5
+﻿namespace Recording_System
 {
     partial class SplashScreen
     {

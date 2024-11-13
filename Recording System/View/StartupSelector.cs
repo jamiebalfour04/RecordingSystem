@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading;
 using System.Windows.Forms;
 
-namespace Recording_System_3._5
+namespace Recording_System
 {
     public partial class StartupSelector : Form
     {

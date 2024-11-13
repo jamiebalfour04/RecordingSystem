@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{99BBDFA3-938C-48AE-8845-4F59926F1B5C}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>Recording_System_3._5</RootNamespace>
-    <AssemblyName>Recording System 3.5</AssemblyName>
+    <RootNamespace>Recording_System</RootNamespace>
+    <AssemblyName>Recording System</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -32,7 +32,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>Recording_System_3._5.Program</StartupObject>
+    <StartupObject>Recording_System.Program</StartupObject>
   </PropertyGroup>
   <PropertyGroup>
     <ApplicationIcon>favicon.ico</ApplicationIcon>

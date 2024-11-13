@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 
-namespace Recording_System_3._5
+namespace Recording_System
 {
     internal static class Program
     {

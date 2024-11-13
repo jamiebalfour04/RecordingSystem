@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Recording_System_3._5.Properties {
+namespace Recording_System.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
