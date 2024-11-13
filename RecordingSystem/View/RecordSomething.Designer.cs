@@ -1,6 +1,6 @@
 ﻿using System.Drawing;
 using System.Windows.Forms;
-namespace Recording_System
+namespace RecordingSystem
 {
     partial class RecordSomething
     {

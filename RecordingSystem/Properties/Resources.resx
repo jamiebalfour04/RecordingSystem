@@ -120,10 +120,6 @@
   <data name="applicationName" xml:space="preserve">
     <value>Staff Recording System</value>
   </data>
-  <data name="mainPath" xml:space="preserve">
-    <value>S:\Staff Work\Responsibility of All\Staff Reporting System\Program Output\</value>
-    <comment>The path to store all details and information</comment>
-  </data>
   <data name="password" xml:space="preserve">
     <value>kajbgf2024</value>
   </data>

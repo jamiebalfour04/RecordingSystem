@@ -1,5 +1,5 @@
 ﻿
-namespace Recording_System
+namespace RecordingSystem
 {
 
     public class SerialisableFile

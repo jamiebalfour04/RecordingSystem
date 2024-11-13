@@ -10,7 +10,7 @@ using System.Text;
 using System.Windows.Forms;
 using System.Xml.Serialization;
 
-namespace Recording_System
+namespace RecordingSystem
 {
     public partial class RecordSomething : Form
     {

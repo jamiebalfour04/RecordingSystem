@@ -1,7 +1,7 @@
 ﻿using System.Drawing;
 using System.Windows.Forms;
 
-namespace Recording_System
+namespace RecordingSystem
 {
     partial class ViewMessage
     {
@@ -130,7 +130,7 @@ namespace Recording_System
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 27.15596F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 72.84404F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 40F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 378F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 379F));
             this.tableLayoutPanel2.Controls.Add(this.label1, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.recordedOn, 1, 0);
             this.tableLayoutPanel2.Controls.Add(this.label3, 2, 0);
@@ -152,14 +152,14 @@ namespace Recording_System
             this.recordedOn.Location = new System.Drawing.Point(136, 3);
             this.recordedOn.Name = "recordedOn";
             this.recordedOn.ReadOnly = true;
-            this.recordedOn.Size = new System.Drawing.Size(352, 27);
+            this.recordedOn.Size = new System.Drawing.Size(351, 27);
             this.recordedOn.TabIndex = 1;
             // 
             // label3
             // 
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(500, 7);
+            this.label3.Location = new System.Drawing.Point(499, 7);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(22, 16);
             this.label3.TabIndex = 2;
@@ -171,10 +171,10 @@ namespace Recording_System
             this.teacher.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.teacher.Dock = System.Windows.Forms.DockStyle.Fill;
             this.teacher.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.teacher.Location = new System.Drawing.Point(534, 3);
+            this.teacher.Location = new System.Drawing.Point(533, 3);
             this.teacher.Name = "teacher";
             this.teacher.ReadOnly = true;
-            this.teacher.Size = new System.Drawing.Size(373, 27);
+            this.teacher.Size = new System.Drawing.Size(374, 27);
             this.teacher.TabIndex = 3;
             // 
             // panel1

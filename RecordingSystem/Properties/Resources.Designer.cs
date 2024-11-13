@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Recording_System.Properties {
+namespace RecordingSystem.Properties {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace Recording_System.Properties {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Recording_System.Properties.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("RecordingSystem.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -66,15 +66,6 @@ namespace Recording_System.Properties {
         internal static string applicationName {
             get {
                 return ResourceManager.GetString("applicationName", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to S:\Staff Work\Responsibility of All\Staff Reporting System\Program Output\.
-        /// </summary>
-        internal static string mainPath {
-            get {
-                return ResourceManager.GetString("mainPath", resourceCulture);
             }
         }
         

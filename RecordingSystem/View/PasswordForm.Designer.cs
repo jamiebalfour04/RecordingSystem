@@ -1,6 +1,6 @@
 ﻿using System.Windows.Forms;
 
-namespace Recording_System
+namespace RecordingSystem
 {
     partial class PasswordForm
     {

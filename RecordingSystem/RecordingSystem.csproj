@@ -6,7 +6,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{99BBDFA3-938C-48AE-8845-4F59926F1B5C}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>Recording_System</RootNamespace>
+    <RootNamespace>RecordingSystem</RootNamespace>
     <AssemblyName>Recording System</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>

@@ -4,7 +4,7 @@ using System.IO;
 using System.Windows.Forms;
 using System.Xml.Serialization;
 
-namespace Recording_System
+namespace RecordingSystem
 {
     public partial class SelectMessage : Form
     {

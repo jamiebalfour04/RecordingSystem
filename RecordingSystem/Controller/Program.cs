@@ -1,7 +1,8 @@
 ﻿using System;
+using System.IO;
 using System.Windows.Forms;
 
-namespace Recording_System
+namespace RecordingSystem
 {
     internal static class Program
     {
@@ -11,6 +12,8 @@ namespace Recording_System
         [STAThread]
         static void Main()
         {
+
+            Directory.CreateDirectory("ProgramOutput/");
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new StartupSelector());
@@ -19,7 +22,7 @@ namespace Recording_System
 
         public static readonly string CIPHER = "knox2024";
         //public static readonly string PROGRAM_PATH = @"S:\Staff Work\Responsibility of All\Staff Reporting System\Program Output\";
-        public static readonly string PROGRAM_PATH = Properties.Resources.mainPath;
+        public static readonly string PROGRAM_PATH = "ProgramOutput/";
         public static bool LOGGED_IN = false;
     }
 }
