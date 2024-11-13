@@ -7,7 +7,7 @@
     <ProjectGuid>{99BBDFA3-938C-48AE-8845-4F59926F1B5C}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>RecordingSystem</RootNamespace>
-    <AssemblyName>Recording System</AssemblyName>
+    <AssemblyName>RecordingSystem</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -32,7 +32,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>Recording_System.Program</StartupObject>
+    <StartupObject>RecordingSystem.Program</StartupObject>
   </PropertyGroup>
   <PropertyGroup>
     <ApplicationIcon>favicon.ico</ApplicationIcon>
