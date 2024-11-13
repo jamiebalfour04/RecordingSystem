@@ -44,7 +44,7 @@ namespace RecordingSystem
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(26, 25);
+            this.label1.Location = new System.Drawing.Point(26, 15);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(228, 16);
             this.label1.TabIndex = 0;
@@ -52,7 +52,7 @@ namespace RecordingSystem
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(26, 299);
+            this.button1.Location = new System.Drawing.Point(26, 289);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(135, 23);
             this.button1.TabIndex = 2;
@@ -62,6 +62,7 @@ namespace RecordingSystem
             // 
             // tableLayoutPanel1
             // 
+            this.tableLayoutPanel1.BackColor = System.Drawing.SystemColors.Control;
             this.tableLayoutPanel1.ColumnCount = 3;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 23F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -70,7 +71,7 @@ namespace RecordingSystem
             this.tableLayoutPanel1.Controls.Add(this.button1, 1, 3);
             this.tableLayoutPanel1.Controls.Add(this.listView1, 1, 2);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(10, 10);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 5;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
@@ -78,7 +79,7 @@ namespace RecordingSystem
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 249F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(577, 352);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(557, 332);
             this.tableLayoutPanel1.TabIndex = 3;
             // 
             // listView1
@@ -88,10 +89,10 @@ namespace RecordingSystem
             this.listView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.listView1.FullRowSelect = true;
             this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(26, 50);
+            this.listView1.Location = new System.Drawing.Point(26, 40);
             this.listView1.MultiSelect = false;
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(525, 243);
+            this.listView1.Size = new System.Drawing.Size(505, 243);
             this.listView1.TabIndex = 3;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
@@ -112,12 +113,14 @@ namespace RecordingSystem
             this.AcceptButton = this.button1;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(66)))));
             this.ClientSize = new System.Drawing.Size(577, 352);
             this.Controls.Add(this.tableLayoutPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "SelectMessage";
+            this.Padding = new System.Windows.Forms.Padding(10);
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Staff Recording System :: Select Message";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.SelectMessage_Close);

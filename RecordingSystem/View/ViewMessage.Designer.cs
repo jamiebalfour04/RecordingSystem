@@ -58,7 +58,7 @@ namespace RecordingSystem
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(23, 7);
+            this.label1.Location = new System.Drawing.Point(24, 7);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(86, 16);
             this.label1.TabIndex = 0;
@@ -66,9 +66,6 @@ namespace RecordingSystem
             // 
             // tableLayoutPanel1
             // 
-            this.tableLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutPanel1.BackColor = System.Drawing.SystemColors.Control;
             this.tableLayoutPanel1.ColumnCount = 1;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -76,7 +73,8 @@ namespace RecordingSystem
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.panel1, 0, 3);
             this.tableLayoutPanel1.Controls.Add(this.panel2, 0, 2);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(12, 12);
+            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 4;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 36F));
@@ -84,7 +82,7 @@ namespace RecordingSystem
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 70F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 22F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(916, 510);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(920, 514);
             this.tableLayoutPanel1.TabIndex = 1;
             // 
             // tableLayoutPanel3
@@ -99,7 +97,7 @@ namespace RecordingSystem
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 1;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(910, 30);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(914, 30);
             this.tableLayoutPanel3.TabIndex = 1;
             // 
             // subjectLabel
@@ -121,7 +119,7 @@ namespace RecordingSystem
             this.pupilName.Location = new System.Drawing.Point(138, 3);
             this.pupilName.Name = "pupilName";
             this.pupilName.ReadOnly = true;
-            this.pupilName.Size = new System.Drawing.Size(769, 27);
+            this.pupilName.Size = new System.Drawing.Size(773, 27);
             this.pupilName.TabIndex = 1;
             // 
             // tableLayoutPanel2
@@ -130,7 +128,7 @@ namespace RecordingSystem
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 27.15596F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 72.84404F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 40F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 379F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 380F));
             this.tableLayoutPanel2.Controls.Add(this.label1, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.recordedOn, 1, 0);
             this.tableLayoutPanel2.Controls.Add(this.label3, 2, 0);
@@ -140,7 +138,7 @@ namespace RecordingSystem
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(910, 30);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(914, 30);
             this.tableLayoutPanel2.TabIndex = 0;
             // 
             // recordedOn
@@ -149,17 +147,17 @@ namespace RecordingSystem
             this.recordedOn.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.recordedOn.Dock = System.Windows.Forms.DockStyle.Fill;
             this.recordedOn.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.recordedOn.Location = new System.Drawing.Point(136, 3);
+            this.recordedOn.Location = new System.Drawing.Point(137, 3);
             this.recordedOn.Name = "recordedOn";
             this.recordedOn.ReadOnly = true;
-            this.recordedOn.Size = new System.Drawing.Size(351, 27);
+            this.recordedOn.Size = new System.Drawing.Size(353, 27);
             this.recordedOn.TabIndex = 1;
             // 
             // label3
             // 
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(499, 7);
+            this.label3.Location = new System.Drawing.Point(502, 7);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(22, 16);
             this.label3.TabIndex = 2;
@@ -171,10 +169,10 @@ namespace RecordingSystem
             this.teacher.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.teacher.Dock = System.Windows.Forms.DockStyle.Fill;
             this.teacher.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.teacher.Location = new System.Drawing.Point(533, 3);
+            this.teacher.Location = new System.Drawing.Point(536, 3);
             this.teacher.Name = "teacher";
             this.teacher.ReadOnly = true;
-            this.teacher.Size = new System.Drawing.Size(374, 27);
+            this.teacher.Size = new System.Drawing.Size(375, 27);
             this.teacher.TabIndex = 3;
             // 
             // panel1
@@ -182,7 +180,7 @@ namespace RecordingSystem
             this.panel1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.panel1.Controls.Add(this.btnMarkAsRead);
             this.panel1.Controls.Add(this.btnClose);
-            this.panel1.Location = new System.Drawing.Point(273, 443);
+            this.panel1.Location = new System.Drawing.Point(275, 447);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(369, 63);
             this.panel1.TabIndex = 3;
@@ -215,7 +213,7 @@ namespace RecordingSystem
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(3, 75);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(910, 362);
+            this.panel2.Size = new System.Drawing.Size(914, 366);
             this.panel2.TabIndex = 4;
             // 
             // informationBox
@@ -229,7 +227,7 @@ namespace RecordingSystem
             this.informationBox.Location = new System.Drawing.Point(9, 12);
             this.informationBox.Name = "informationBox";
             this.informationBox.ReadOnly = true;
-            this.informationBox.Size = new System.Drawing.Size(892, 335);
+            this.informationBox.Size = new System.Drawing.Size(896, 339);
             this.informationBox.TabIndex = 3;
             this.informationBox.Text = "";
             // 
@@ -237,9 +235,9 @@ namespace RecordingSystem
             // 
             this.panel3.Controls.Add(this.tableLayoutPanel1);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(0, 0);
+            this.panel3.Location = new System.Drawing.Point(10, 10);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(940, 534);
+            this.panel3.Size = new System.Drawing.Size(920, 514);
             this.panel3.TabIndex = 2;
             // 
             // ViewMessage
@@ -251,6 +249,7 @@ namespace RecordingSystem
             this.ClientSize = new System.Drawing.Size(940, 534);
             this.Controls.Add(this.panel3);
             this.Name = "ViewMessage";
+            this.Padding = new System.Windows.Forms.Padding(10);
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Staff Recording System :: View Message";
